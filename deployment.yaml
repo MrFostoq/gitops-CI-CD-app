@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: got-to-app-deployment
+  name: reg-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: got-to-app
+      app: reg-app
   template:
     metadata:
       labels:
-        app: got-to-app
+        app: reg-app
     spec:
       containers:
-        - name: got-to-app
+        - name: reg-app
           image: fostoq/reg-app:1.0.0-26
           resources:
             limits:
