@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "Jenkins-Agent" }
+    agent { label "Jenkins-agent" }
     environment {
               APP_NAME = "register-app-pipeline"
     }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh """
                    git config --global user.name "MrFostoq"
-                   git config --global user.email "abod18mon@@gmail.com"
+                   git config --global user.email "abod18mon@gmail.com"
                    git add deployment.yaml
                    git commit -m "Updated Deployment Manifest"
                 """
