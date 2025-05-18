@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: got-to-app
-          image: fostoq/got-to-app:1.0.0-23
+          image: fostoq/reg-app:1.0.0-26
           resources:
             limits:
               memory: "256Mi"
